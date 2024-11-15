@@ -2,32 +2,32 @@
 
 ## **Overview**
 
-The **Task Manager** is a React-based application designed for efficient task management. Users can create, edit, delete, and organize tasks with ease. The application categorizes tasks as **upcoming**, **overdue**, or **completed**, making it simple to keep track of your workload. Additionally, users can filter tasks by priority and search using task titles or descriptions. To ensure data persistence across sessions, the app utilizes local storage.
+The **Task Manager** is a React application tailored to streamline task management. It enables users to effortlessly create, update, delete, and organize tasks. Tasks are automatically categorized into **Upcoming**, **Overdue**, or **Completed**, providing a clear overview of priorities. The app also offers features to filter tasks based on priority and search through titles or descriptions. To ensure data is retained between sessions, tasks are stored locally on the user's device.
 
-## **Features**
+## **Key Features**
 
--   ✅ **Task Management**: Create, edit, and delete tasks with a title, description, due date, and priority level.
--   📅 **Task Categorization**: Automatically classify tasks as **Upcoming**, **Overdue**, or **Completed** based on their due dates.
--   🔍 **Searching**: Search tasks by title or description.
--   ⌛ **Filtering**: Filter tasks by priority (High, Medium, Low) and status (Completed).
--   💾 **Data Persistence**: Save tasks to local storage to maintain them across sessions.
--   🎨 **User-Friendly Interface**: Clean, responsive design with intuitive UI elements using **Font Awesome** icons.
+-   ✅ **Task Handling**: Add, edit, and remove tasks with attributes like title, description, due date, and priority.
+-   📅 **Automatic Categorization**: Organize tasks into **Upcoming**, **Overdue**, or **Completed** categories depending on deadlines.
+-   🔍 **Search Functionality**: Locate tasks quickly using titles or descriptions.
+-   ⌛ **Filter Options**: Filter tasks based on their priority (High, Medium, Low) or completion status.
+-   💾 **Persistent Storage**: Leverages local storage to maintain tasks across sessions.
+-   🎨 **Intuitive Design**: Features a modern, responsive interface enhanced with **Font Awesome** icons.
 
-## **Technologies Used**
+## **Technologies Utilized**
 
--   **React**: Frontend framework for building interactive user interfaces.
--   **CSS**: Custom styles for a modern and responsive design.
--   **Font Awesome**: Icon library for improved user experience.
--   **Local Storage**: Client-side storage for persisting tasks data.
+-   **React**: For building dynamic and interactive user interfaces.
+-   **CSS**: Custom styling for a responsive and user-friendly design.
+-   **Font Awesome**: Icon set for enhancing the UI experience.
+-   **Local Storage**: Used for storing tasks to maintain data consistency.
 
-## **Setup Instructions**
+## **Setup Guide**
 
 ### **Prerequisites**
 
--   [Node.js](https://nodejs.org/) (v14 or higher)
--   [Git](https://git-scm.com/) for cloning the repository
+-   Install [Node.js](https://nodejs.org/) (version 14 or higher).
+-   Ensure [Git](https://git-scm.com/) is installed for repository cloning.
 
-### **Steps**
+### **Steps to Run the Application**
 
 1. Clone the repository:
 
@@ -41,7 +41,7 @@ The **Task Manager** is a React-based application designed for efficient task ma
     cd task_manager
     ```
 
-3. Install the dependencies:
+3. Install the necessary dependencies:
 
     ```bash
     npm install
@@ -53,11 +53,11 @@ The **Task Manager** is a React-based application designed for efficient task ma
     npm start
     ```
 
-5. Open your browser and visit:
+5. Open the application in your browser at:
 
     [http://localhost:3000/](http://localhost:3000/)
 
-## **Project Structure**
+## **Project Directory Structure**
 
 ```plaintext
 task_manager/
@@ -89,14 +89,13 @@ task_manager/
 ├── package-lock.json
 ├── package.json
 └── README.md
-
 ```
 
-## **Assumptions Made During Development**
+## **Development Considerations**
 
--   **Local Storage for Persistence**: Local storage is used to keep the application simple and eliminate the need for backend integration.
--   **Unique Task Identification**: Each task is assigned a unique `id` generated using `Date.now()`, which is considered sufficient for this context.
--   **Simultaneous Filter and Search**: The filter dropdown and search input work together, allowing users to refine task lists based on both criteria.
--   **Basic Input Validation**: The app includes minimal validation, assuming users will provide valid input.
--   **Search Across Title and Description**: The search feature scans both task title and description for matches, accommodating varied user search behaviors.
--   **Compact Task List View**: The task description is hidden in the list view to maintain a simplified and focused interface.
+-   **Data Storage**: Local storage was chosen to simplify the project and remove the need for a backend.
+-   **Task IDs**: Tasks are uniquely identified using timestamps (`Date.now()`), which is sufficient for this use case.
+-   **Filter and Search Synergy**: Filters and search functionality work seamlessly together to provide a refined list of tasks.
+-   **Input Validation**: Basic validation is implemented, relying on user-provided input to be reasonable.
+-   **Search Scope**: Both task titles and descriptions are searched to accommodate diverse user needs.
+-   **Streamlined UI**: The task description is hidden in the list view to keep the interface clutter-free and focused.
